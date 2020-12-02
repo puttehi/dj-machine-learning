@@ -1,6 +1,6 @@
 # Doodle Jump Machine Learning
 
-A simple implementation of TensorFlow.js to implement reinforcement learning in a simplified clone of the platforming game Doodle Jump.
+A simple implementation of [TensorFlow.js](https://www.tensorflow.org/js) to implement reinforcement learning in a simplified clone of the platforming game Doodle Jump built on the [p5 framework](https://p5js.org/).
 
 <img src="https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/screenshot.png?raw=true" width="253" height="380" />
 
