@@ -4,8 +4,7 @@
 const drawPlatformDebug = false; // show platform debug info on top of platforms
 const drawDoodlerDebug = true; // show ML debug info on top of doodlers
 const autoRestart = true; // don't show "Start" screen after all doodlers die
-const unstuckSeconds = 3; // how many seconds can the doodlers score NOT increase before it is auto-moved
-const unstuckFrames = 20; // how many frames to hold a movement input in stuck situation to unstuck?
+const unstuckSeconds = 3; // how many seconds can the doodlers score NOT increase before it is removed
 // ML Model layer settings
 const inputCount = 5;
 const hiddenCount = 4;
@@ -17,6 +16,7 @@ const drawEveryXDoodlers = 2; // Less drawn doodlers = less lag = more agents to
 // ==============================
 // Global variables, don't touch
 // ==============================
+const unstuckFrames = 20; 
 var gameStarted;
 var initModel = true;
 var score = 0;
