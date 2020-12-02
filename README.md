@@ -2,7 +2,7 @@
 
 A simple implementation of TensorFlow.js to implement reinforcement learning in a simplified clone of the platforming game Doodle Jump.
 
-![](https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/screenshot.png?raw=true)
+<img src="https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/screenshot.png?raw=true" width="253" height="380" />
 
 ## Try it out!
 
@@ -61,6 +61,7 @@ You can adjust some of the settings on top of the `./sketch.js` file like:
 * How long before a doodler is considered "stuck"
 * Machine learning model node counts
     * If you change the input or output count, you need to modify other code!
+* Drawing of platform and doodler debug information (positions/ML data)
 
 ## Additional information
 
@@ -82,6 +83,8 @@ And the output layer outputs 3 different outputs:
 * Move left
 * Don't Move
 * Move right
+
+<img src="https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/ai_diagram_drawio.png?raw=true" width="600" height="233" />
 
 #### Genetic algorithm
 
