@@ -15,10 +15,6 @@ class NeuralNetwork {
     // will download files best-doodler.json, best-doodler.weights.bin
     const saveData = this.model.save("downloads://best-doodler");
   }
-  static Load() {
-    const model = tf.loadLayersModel("./models/my-model.json");
-    console.log(model);
-  }
   Copy() {
     return tf.tidy(() => {
       const modelCopy = this.CreateModel();

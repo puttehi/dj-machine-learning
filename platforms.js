@@ -42,7 +42,6 @@ class Platform {
   static Create(props) {
     if (props) {
       if (props.unshift) {
-        //console.log("CreatePlatform: props given using props (unshifting):" + props)
         platformList.unshift(new Platform({
           y: props.y ? props.y : 0,
           width: props.width ? props.width : platformWidth,
@@ -50,7 +49,6 @@ class Platform {
           sprite: props.sprite ? props.sprite : greenPlatformImg
         }));
       } else {
-        //console.log("CreatePlatform: props given using props (pushing):" + props)
         platformList.push(new Platform({
           y: props.y ? props.y : 0,
           width: props.width ? props.width : platformWidth,
@@ -59,7 +57,6 @@ class Platform {
         }));
       }
     } else {
-      //console.log("CreatePlatform: no props given using defaults")
       platformList.unshift(new Platform({
         y: 0,
         width: platformWidth,
@@ -70,7 +67,6 @@ class Platform {
   }
   static DestroyOldest() {
     var destroyedPlatform = platformList.pop();
-    //console.log(`DestroyOldestPlatform: Popped platform ${destroyedPlatform}, there is now ${platformList.length} platforms in total`)
   }
 
   static InitNewGamePlatforms(amountPlatforms) {

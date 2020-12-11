@@ -39,6 +39,7 @@ function CalculateFitness() {
   }
   for (let doodler of deadDoodlers) {
     // better score = better fitness, higher bad jumps = lower fitness
-    doodler.fitness = (doodler.actualScore - (10 * badJumpSum)) / (scoreSum + (10 * badJumpSum));
+    //doodler.fitness = (doodler.actualScore - (10 * badJumpSum)) / (scoreSum + (10 * badJumpSum));
+      doodler.fitness = (doodler.actualScore - (10 * doodler.jumpsOnSamePlatform)) / (scoreSum + (10 * badJumpSum));
   }
 }

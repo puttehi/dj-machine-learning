@@ -2,7 +2,7 @@
 // Sketch settings, adjust as needed
 // ==============================
 const drawPlatformDebug = false; // show platform debug info on top of platforms
-const drawDoodlerDebug = true; // show ML debug info on top of doodlers
+const drawDoodlerDebug = false; // show ML debug info on top of doodlers
 const autoRestart = true; // don't show "Start" screen after all doodlers die
 const unstuckSeconds = 3; // how many seconds can the doodlers score NOT increase before it is removed
 // ML Model layer settings
