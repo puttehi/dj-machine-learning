@@ -4,6 +4,10 @@ A simple implementation of [TensorFlow.js](https://www.tensorflow.org/js) to imp
 
 <img src="https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/screenshot.png?raw=true" width="253" height="380" />
 
+The game was rewritten from [this implementation by JasonMize](https://codepen.io/ainc/pen/ZxGXwd). 
+
+The original game is published by Lima Sky LLC in the Google Play Store: [Link to app](https://play.google.com/store/apps/details?id=com.lima.doodlejump&hl=fi&gl=US).
+
 ## Try it out!
 
 Clone this repository:
@@ -94,5 +98,12 @@ Bad jumps are jumps where the doodler jumped on the same platform again. Bad jum
 
 `doodler.fitness = (doodler.actualScore - (10 * badJumpSum)) / (scoreSum + (10 * badJumpSum));`
 
+### Online information
 
+Daniel Shiffman of CodingTrain has excellent video series on the topics at hand:
 
+* [Coding Challenge #100.1: Neuroevolution Flappy Bird – Part 1](https://www.youtube.com/watch?v=c6y21FkaUqw)
+
+* [3.1: Introduction to Session 3 - What is Machine Learning?](https://www.youtube.com/watch?v=LvIa0-ZKCrc)
+
+* [9.2: Genetic Algorithm: How it works - The Nature of Code](https://www.youtube.com/watch?v=RxTfc4JLYKs)
