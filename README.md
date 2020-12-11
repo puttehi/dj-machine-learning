@@ -1,8 +1,12 @@
 # Doodle Jump Machine Learning
 
-A simple implementation of TensorFlow.js to implement reinforcement learning in a simplified clone of the platforming game Doodle Jump.
+A simple implementation of [TensorFlow.js](https://www.tensorflow.org/js) to implement reinforcement learning in a simplified clone of the platforming game Doodle Jump built on the [p5 framework](https://p5js.org/).
 
-![](https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/screenshot.png?raw=true)
+<img src="https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/screenshot.png?raw=true" width="253" height="380" />
+
+The game was rewritten from [this implementation by JasonMize](https://codepen.io/ainc/pen/ZxGXwd). 
+
+The original game is published by Lima Sky LLC in the Google Play Store: [Link to app](https://play.google.com/store/apps/details?id=com.lima.doodlejump&hl=fi&gl=US).
 
 ## Try it out!
 
@@ -61,6 +65,7 @@ You can adjust some of the settings on top of the `./sketch.js` file like:
 * How long before a doodler is considered "stuck"
 * Machine learning model node counts
     * If you change the input or output count, you need to modify other code!
+* Drawing of platform and doodler debug information (positions/ML data)
 
 ## Additional information
 
@@ -83,6 +88,8 @@ And the output layer outputs 3 different outputs:
 * Don't Move
 * Move right
 
+<img src="https://gitlab.dclabra.fi/PetteriZit/dj-machine-learning/-/raw/master/media/ai_diagram_drawio.png?raw=true" width="600" height="233" />
+
 #### Genetic algorithm
 
 The genetic algorithm is quite simple. The doodlers gain fitness according to how good their score was compared to the whole generation and lose fitness on how many "bad jumps" they did compared to the whole generation.
@@ -91,5 +98,12 @@ Bad jumps are jumps where the doodler jumped on the same platform again. Bad jum
 
 `doodler.fitness = (doodler.actualScore - (10 * badJumpSum)) / (scoreSum + (10 * badJumpSum));`
 
+### Online information
 
+Daniel Shiffman of CodingTrain has excellent video series on the topics at hand:
 
+* [Coding Challenge #100.1: Neuroevolution Flappy Bird – Part 1](https://www.youtube.com/watch?v=c6y21FkaUqw)
+
+* [3.1: Introduction to Session 3 - What is Machine Learning?](https://www.youtube.com/watch?v=LvIa0-ZKCrc)
+
+* [9.2: Genetic Algorithm: How it works - The Nature of Code](https://www.youtube.com/watch?v=RxTfc4JLYKs)
