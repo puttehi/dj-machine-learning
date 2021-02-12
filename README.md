@@ -96,7 +96,7 @@ The genetic algorithm is quite simple. The doodlers gain fitness according to ho
 
 Bad jumps are jumps where the doodler jumped on the same platform again. Bad jumps are weighted so they affect the resulting fitness more:
 
-`doodler.fitness = (doodler.actualScore - (10 * badJumpSum)) / (scoreSum + (10 * badJumpSum));`
+`doodler.fitness = (doodler.actualScore - (10 * doodler.jumpsOnSamePlatform)) / (scoreSum + (10 * badJumpSum));`
 
 ### Online information
 
